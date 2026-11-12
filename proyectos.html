@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | Julian Mangas</title>
+  <meta name="description" content="Proyectos realizados por Julian Mangas durante la carrera de programación.">
+  <meta name="keywords" content="proyectos, portfolio, programación, ASP.NET, aplicaciones">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="Logo" width="30" height="30"> Julian Mangas
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Mis proyectos</h1>
+    <div class="row">
+
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <img src="assets/img/proyecto-inventario.svg" class="card-img-top" alt="Sistema de inventario">
+          <div class="card-body">
+            <h2 class="h5 card-title">Sistema de Inventario</h2>
+            <p class="card-text">Sistema para registrar productos y ventas.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalProyecto1">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <img src="assets/img/proyecto-burger.svg" class="card-img-top" alt="App TuBurger">
+          <div class="card-body">
+            <h2 class="h5 card-title">TuBurger</h2>
+            <p class="card-text">App de pedidos para una hamburguesería.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalProyecto2">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modales -->
+  <div class="modal fade" id="modalProyecto1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sistema de Inventario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Trabajo práctico en grupo hecho con ASP.NET y Blazor.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProyecto2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">TuBurger</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Proyecto de Programación Móvil: API, app móvil y página web para tomar pedidos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">Desarrollado por Julian Mangas - <span id="anio"></span></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
